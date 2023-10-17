@@ -1,0 +1,44 @@
+.home {
+  display: flex;
+  width: 100%;
+  /* margin: 0; */
+  color: rgb(255, 255, 255);
+}
+.main {
+  display: flex;
+  /* overflow-x: hidden; */
+  flex-direction: column;
+  margin-left: 15rem;
+  width: 100%;
+  /* right: 0; */
+  background-color: rgb(29, 29, 31);
+}
+.main::before {
+  content: " ";
+  display: block;
+  position: fixed;
+
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index:0 ;
+  opacity: 0.3;
+  background: url(home.jpeg);
+  background-size: cover;
+}
+@media (max-width: 565px) {
+    .home{
+      overflow-x: hidden;
+        width: 100%;
+    }
+  .main {
+    width: 25rem;
+    width: 100%;
+    margin-left: 0px;
+    
+  }
+  .main::before{
+    width: 100%;
+
+  }
+}

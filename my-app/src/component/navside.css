@@ -1,0 +1,66 @@
+@media (max-width: 565px ) {
+#green{
+    display: none;
+    
+}
+}
+
+.sidenav{
+    position: fixed;
+    background-color: rgb(9, 8, 8);
+    width: 240px;
+    height: 100%;
+    padding: 45px;
+    font-weight: 500;
+    
+}
+.sidenav ul{
+    list-style-type: none;
+    
+}
+.sidenav *{
+    margin-bottom: 15px;
+}
+.logoandname >h4{
+    text-align: center;
+    
+}
+.logosidebar >img{
+    width: 150px;
+    height: 150px;
+    border: 8px solid grey;
+    border-radius: 100px;
+    
+    background-size:cover;
+}
+.sidenav-ul{
+    padding-left: 0%;
+    text-align: center;
+}
+.sidenav-ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+.sidenav-ul li a:hover{
+    color: aquamarine;
+    
+}
+
+
+.socialmedia{
+    margin-top: 30px;
+}
+.socialmedia a {
+    padding-left: 17px;
+    margin-top: 30px;
+    
+}
+.socialmedia a i{
+    transition:all .35s .35s;
+    color: aqua;
+    
+}
+.socialmedia a i:hover{
+    color: blueviolet;
+}

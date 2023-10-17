@@ -1,0 +1,93 @@
+
+.back {
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+  background-color: rgb(17, 16, 16);
+  height: fit-content;
+}
+.content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 1.25rem;
+}
+
+.backcontent {
+  color: rgb(71, 71, 75);
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+.heading1 h3 {
+  transform: translateY(-80px);
+  font-size: 2.5rem;
+  margin: 0px;
+  text-align: center;
+  color: aqua;
+}
+.description {
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.description * {
+  text-align: left;
+}
+.description_details {
+  width: 500px;
+  padding-right: 40px;
+}
+
+.description_details h3,
+.description_details h3 span {
+  font-size: 1.75rem;
+}
+.description_details h3 span {
+  color: aqua;
+}
+.description_details p,
+.cvpart div * {
+  font-size: 20px;
+}
+.cvpart {
+  width: fit-content;
+}
+.cvpart button {
+  border: 2px solid rgb(29, 229, 156);
+
+  margin-top: 15px;
+  font-size: large;
+  border-radius: 2.2rem;
+  transition: all 0.35s 0.34s;
+  color: aliceblue;
+  background-color: rgb(0, 0, 0);
+}
+.cvpart button:hover {
+ 
+  background-color: rgb(19, 83, 69);
+}
+.cvpart p {
+  border-bottom: 2px solid rgb(70, 70, 72);
+}
+@media (max-width: 690px) {
+  .backcontent h3{
+    font-size: 4rem;
+  }
+  .heading1 h3 {
+      transform: translateY(-83px);
+    }
+  .description {
+    flex-direction: column;
+  }
+  .description * {
+    text-align: left;
+  }
+  .description_details {
+    width: 98%;
+    padding-right: 0rem;
+  }
+  .heading1 h3 {
+    font-size: 2rem;
+    padding-top: 15px;
+  }
+}

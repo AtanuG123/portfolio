@@ -1,0 +1,84 @@
+.back1 {
+  position: relative;
+
+  height: 33rem;
+  width: 100%;
+}
+
+#welcontent{
+  margin-top: 30px;
+}
+
+#welcontent > div h2 {
+  padding-top: 20px;
+  font-size: 3rem;
+  font-family: "Caveat", cursive;
+}
+.typewri {
+  font-size: 3rem;
+}
+#welcontent > div > a button {
+  border: 2px solid rgb(29, 229, 156);
+  background: none;
+  color: rgb(95, 233, 208);
+
+  padding: 3px 10px;
+  font-size: x-large;
+
+  border-radius: 35px;
+  transition: all 0.35s 0.34s;
+}
+#welcontent > div > a button:hover {
+  color: aliceblue;
+  /* border: none; */
+  background-color: rgb(19, 83, 69);
+}
+#welcontent h6 {
+  font-size: 20px;
+  padding: 15px 0px 5px 0px;
+}
+
+.movingcursor {
+  margin-top: 40px;
+  height: 40px;
+  cursor: pointer;
+  /* margin: 3.75rem 27.1rem; */
+}
+.movingcursor a i {
+  font-size: 18px;
+  color: aliceblue;
+  animation: movedown 2s infinite;
+}
+@keyframes movedown {
+  0% {
+    transform: translateY(-28px);
+  }
+  50% {
+    transform: translateY(8px);
+    font-size: 15px;
+  }
+  100% {
+    transform: translateY(-28px);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .back1 {
+    padding-top: 6rem;
+    height: 48rem;
+    width: 100%;
+  }
+  .movingcursor {
+    margin: 3rem;
+  }
+  #welcontent > div h2 {
+    font-size: 2.5rem;
+  }
+#welcontent > div{
+  margin-bottom: 2rem;
+}
+  .typewri {
+    font-size: 2.5rem;
+  }
+}

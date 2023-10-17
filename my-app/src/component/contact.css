@@ -1,0 +1,80 @@
+
+
+.forfrom {
+  text-align: center;
+}
+.forfrom div {
+  color: #000000;
+  padding-top: 5px;
+  margin: 1.25rem 0rem;
+  
+}
+.form-control1 {
+  color: aliceblue;
+  border-radius: 10px;
+  width: 500px;
+  height: 50px;
+  border: 1px solid aqua;
+  background-color: rgb(52, 55, 55);
+  box-shadow: 3px 1px 5px rgb(32, 198, 179);
+  transition: .45s .45s;
+}
+.form-control1::placeholder {
+  font-size: 18px;
+  padding-left: 10px;
+  opacity: 0.7;
+  color: rgb(255, 255, 255);
+} 
+.input textarea {
+  height: 100px;
+}
+.form-control1:hover {
+  background-color: black;
+}
+.forsend{
+/* width: fit-content; */
+  text-align: center;
+}
+
+.sendbtn {
+  border-radius:25px;
+  border:  solid rgb(31, 222, 232);
+  padding: 3px 5px;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  transition: all 0.35s 0.34s;
+}
+.sendbtn:hover{
+  background-color: rgb(135, 167, 161);
+  /* color: rgb(1, 1, 2); */
+}
+
+
+.uparrow{
+  padding-right: 0rem;
+  margin-right: 0rem;
+  background-color: #232222;
+  color: rgb(24, 205, 163);
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 8px;
+  font-size: 1.8rem;
+  width: 2.6rem;
+  right: 6px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+@media (max-width:565px) {
+ #conhead{
+  margin-top: -2.8rem;
+ }
+
+  .form-control1{
+    width: 18rem;
+  }
+  .uparrow{
+    right: 0.8rem;
+  }
+
+}

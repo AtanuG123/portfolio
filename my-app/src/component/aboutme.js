@@ -2,7 +2,7 @@ import "./aboutme.css";
 const Aboutme = () => {
     const onButtonClick = () => {
         // using Java Script method to get PDF file
-        fetch('Doc5.pdf').then(response => {
+        fetch('CV.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
@@ -38,6 +38,8 @@ const Aboutme = () => {
                     </div>
                 </div>
             </div>
+            {/* <span><a className="uparrow" href='#welcome_home' ><i class="fa-solid fa-angle-up"></i></a></span> */}
+
         </div>
     )
 }

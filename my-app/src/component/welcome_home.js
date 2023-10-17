@@ -38,7 +38,6 @@ const Welcomehome = () => {
                     <a href='#about' ><i className="fa-solid fa-chevron-down"></i></a>
                 </div>
                 <div>
-                {/* <span><a className="uparrow5"href='#welcome_home' >bnm</a></span> */}
                 </div>
             </div>
         </div>

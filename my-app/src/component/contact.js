@@ -52,6 +52,7 @@ const Contact = () => {
                     @2023 All rights are reserved
                 </div>
 
+                <span><a className="uparrow" href='#welcome_home' ><i class="fa-solid fa-angle-up"></i></a></span>
 
             </div>
         </div>

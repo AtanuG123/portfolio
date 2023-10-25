@@ -51,7 +51,7 @@ const Navside = () => {
             <div className="logoandname">
                 <div className="logosidebar">
                     <img
-                        src={require('./profile.jpg')}
+                        src={require('../images/profile.jpg')}
                         alt="logo"
                     />
                 </div>

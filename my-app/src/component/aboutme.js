@@ -28,14 +28,21 @@ const Aboutme = () => {
                     <div  className="description_details">
                         <h3>I'm <span>Atanu Ghosh</span> , a CSE Student</h3>
                         <p>Currently I'm persuring B tech degreee in computer science and engineering from B.P. Poddar institute of management and Technology,Kolkata. I have knowledge of C, python & Java.I also familer to web developement , can implement frontend and backend using React ,Nodejs and other frameworks.  </p>
-                    </div>
-                    <div className="cvpart">
-                       
-                        <div> <p id="email">Email : atanu31ghosh@gmail.com</p></div>
-                        <div><p>Age : 20</p></div>
-                        <div><p>From : Kolkata , West Bengal</p> </div>
+                        <div className="personaldetails">
+                            <div>
+                                <p>Email : </p>
+                                <a>atanu2004ghosh@gmail.com</a>
+                            </div>
+                            <div>
+                                <p>Mob no : </p>
+                                <a>7439252247</a>
+                            </div>
+                        </div>
                         <div><a onClick={onButtonClick} target="_blank"> <button> Download CV</button> </a></div>
                     </div>
+                    <div className="aboutimg">
+                        <img src={require("../images/myimg.jpg")}></img>
+                        </div>
                 </div>
             </div>
             {/* <span><a className="uparrow" href='#welcome_home' ><i class="fa-solid fa-angle-up"></i></a></span> */}

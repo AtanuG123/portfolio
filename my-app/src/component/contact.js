@@ -43,7 +43,7 @@ const Contact = () => {
                         <textarea required className="form-control1" placeholder="Leave a comment here" name="message" id="floatingTextarea2" ></textarea>
                     </div>
 
-                    <button type="email" className="btn btn-info btn-lg sendbtn" value="send" > send massage </button>
+                    <button type="email" className=" sendbtn" value="send" > send massage </button>
 
                 </form>
 

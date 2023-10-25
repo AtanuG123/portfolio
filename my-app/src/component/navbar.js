@@ -14,9 +14,9 @@ const Navber = () => {
     <div id="navber">
       <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div className="container-fluid" >
-          <a className="navbar-brand" href="/"><img className="navberlogo" src={require('./profile.jpg')}alt="logo"></img></a>
+          <a className="navbar-brand" href="/"><img className="navberlogo" src={require('../images/profile.jpg')}alt="logo"></img></a>
           <a className="navbar-brand" href="/">Atanu Ghosh</a>
-          {/* <a className="navbar-brand" onClick={()=>changecolor}>change</a> */}
+
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

@@ -10,14 +10,15 @@
   display: flex;
   padding: 20px 0px;
   margin: auto;
-  border-radius: 23px;
+  border-radius: 5px;
   width: 350px;
   transition: 0.35s;
-  background-color: rgb(34, 32, 28);
-  box-shadow: 1px 1px 5px rgb(41, 118, 94);
+  background:linear-gradient(rgb(39, 63, 85),rgb(20, 20, 20) 70%);
+  background-color: rgb(238, 251, 2);
+  box-shadow: 1px 1px 5px rgb(2, 246, 169);
 }
 .skillmain >div:hover {
-  box-shadow: 3px 3px 8px rgb(41, 118, 94);
+  box-shadow: 1px 1px 8px rgb(10, 73, 210);
   /* box-shadow: none; */
   
 }
@@ -28,10 +29,10 @@
   text-align: left;
   margin-top: 5px;
   font-size: 25px;
-  color: rgb(132, 232, 199);
+  color: aqua;
 }
 .skillmain p {
-  color: rgb(128, 132, 133);
+  color: rgb(253, 253, 253);
   text-align: left;
   font-size: medium;
 }

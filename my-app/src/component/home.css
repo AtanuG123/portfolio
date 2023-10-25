@@ -23,7 +23,7 @@
   height: 100%;
   z-index:0 ;
   opacity: 0.3;
-  background: url(home.jpeg);
+  background: url(../images/home.jpeg);
   background-size: cover;
 }
 @media (max-width: 565px) {

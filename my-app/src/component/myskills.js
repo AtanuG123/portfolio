@@ -28,7 +28,7 @@ const Myskills = () => {
                         </div>
                     </div>
                     <div id="skilldiv2">
-                        <div className="laptopicon"><i className="fa-solid fa-laptop"></i>
+                        <div className="laptopicon"><i class="fa-solid fa-code"></i>
                         </div>
                         <div>
                             <h3 className="skillmain_content_head">
@@ -36,7 +36,7 @@ const Myskills = () => {
                             </h3>
                             <p>
                                 I love coding ,problem solving. I have also Knowlwdge of Python,Now learning java.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, soluta? Fuga dignissimos placeat aperiam qui eveniet ullam eos vitae earum minima omnis, ipsam natus ex magnam. In voluptas harum voluptate aspernatur. Animi dignissimos possimus atque!
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,  placeat aperiam qui eveniet ullam eos vitae earum minima omnis, ipsam natus ex magnam. In voluptas harum voluptate aspernatur. Animi dignissimos possimus atque!
                             </p>
                             {/* <h6>2 * at Codechef</h6> */}
                         </div>

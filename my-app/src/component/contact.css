@@ -43,6 +43,7 @@
   border:  solid rgb(31, 222, 232);
   padding: 3px 5px;
   color:white;
+  border-radius: 5px;
   background-color: #000000;
   transition: all 0.35s 0.34s;
 }

@@ -72,11 +72,11 @@
   */
 
   .descriptionproject {
-    width: 16.7rem;
-    margin-left: 0.9rem;
+    width: 19rem;
+    /* margin-left: 0.9rem; */
     margin-bottom: 3rem;
   }
   .projectphoto {
-    width: 16.7rem;
+    width: 19rem;
   }
 }

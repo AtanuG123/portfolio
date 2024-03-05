@@ -48,7 +48,8 @@
 }
 .knowledgelogo {
   display: flex;
-  margin: 0rem 6rem;
+  flex-direction: column;
+  margin: 0rem 3rem;
 }
 .knowledgelogo h5 {
   padding-bottom: 30px;
@@ -56,13 +57,22 @@
 }
 
 .knowledgelogo > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin: 5px 20px;
+}
+.klan h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logoandprogress {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .forimg {

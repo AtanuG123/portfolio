@@ -35,7 +35,7 @@ const Aboutme = () => {
                             </div>
                             <div>
                                 <p>Mob no : </p>
-                                <a>7439252247</a>
+                                <a>XXXXXX2297</a>
                             </div>
                         </div>
                         <div><a onClick={onButtonClick} target="_blank"> <button> Download CV</button> </a></div>

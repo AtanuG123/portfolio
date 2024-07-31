@@ -16,6 +16,7 @@
   font-family: "Caveat", cursive;
 }
 .typewri {
+  color: aqua;
   font-size: 3rem;
 }
 #welcontent > div > a button {
@@ -34,9 +35,10 @@
   /* border: none; */
   background-color: rgb(19, 83, 69);
 }
-#welcontent h6 {
+#welcontent p {
   font-size: 25px;
   padding: 15px 100px;
+  
 }
 
 .movingcursor {
@@ -66,7 +68,7 @@
 
 @media (max-width: 768px) {
   .back1 {
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
     height: 105vh;
     width: 100%;
   }
@@ -79,7 +81,7 @@
 #welcontent > div{
   margin-bottom: 2rem;
 }
-#welcontent h6 {
+#welcontent p {
   font-size: 25px;
   padding: 15px 30px;
 }

@@ -10,7 +10,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_f0lo43n', 'template_685t76p', form.current, 'qfQvmS9EbFjUvemNh')
+        emailjs.sendForm('service_f0lo43n', 'template_685t76p', form.current, '58oZ9ibqxclPO-LFI')
             .then((result) => {
                 console.log(result.text);
                 // <Alert1/>
@@ -68,7 +68,7 @@ const Contact = () => {
                     @2023 All rights are reserved
                 </div>
 
-                <span><a className="uparrow" href='#welcome_home' ><i class="fa-solid fa-angle-up"></i></a></span>
+                {/* <span><a className="uparrow" href='#welcome_home' ><i class="fa-solid fa-angle-up"></i></a></span> */}
 
             </div>
         </div>

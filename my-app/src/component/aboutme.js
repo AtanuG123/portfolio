@@ -27,8 +27,9 @@ const Aboutme = () => {
                     <div className="description_details">
                         <h3>I'm <span>Atanu Ghosh</span> , a CSE Student</h3>
                         <p>
-
-                            I am a pre-final-year student at the B. P. Poddar Institute of Management and Technology, pursuing CSE. I am a tech enthusiast with knowledge of various programming languages and frameworks.</p>
+                         
+                            I am a final-year student at the B. P. Poddar Institute of Management and Technology, pursuing B Tech. degree in CSE.
+                            I have knowledge of C, python & Java . I also familer to web developement , can implement frontend and backend using React ,Nodejs and other frameworks.</p>
                         <div className="personaldetails">
                             <div>
 

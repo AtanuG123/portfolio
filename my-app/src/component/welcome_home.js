@@ -33,8 +33,7 @@ const Welcomehome = () => {
                 </div>
                 <div>
 
-                    <h6>I specialize in crafting intuitive websites with cutting-edge technology,
-                        delivering dynamic and engaging user experiences.</h6>
+                    <p> I am Proactive and dedicated developer looking for opportunities to pursue technology milestones by collaborating with dynamic teams to build high-quality websites and identify opportunities to enhance the UX. </p>
                 </div>
                 <div>
                     <div>

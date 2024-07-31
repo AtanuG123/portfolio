@@ -1,5 +1,20 @@
-
-
+#newcontact {
+  background-color: #000000d1;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+.contact > div {
+  padding-top: 50px;
+}
+.contact > div {
+  text-align: left;
+  max-width: 30vw;
+}
+.contact > div h5 {
+  color: aqua;
+}
 .forfrom {
   text-align: center;
 }
@@ -7,7 +22,6 @@
   color: #000000;
   padding-top: 5px;
   margin: 1.25rem 0rem;
-  
 }
 .form-control1 {
   color: rgb(255, 255, 255);
@@ -16,44 +30,44 @@
   height: 50px;
   outline: none;
   border: none;
-  border-bottom: 1.5px solid aqua;
-  background-color: rgb(59, 59, 62);
+  border: 1.5px solid rgb(255, 255, 255);
+  background-color: rgba(18, 18, 18, 0.717);
   /* box-shadow: 3px 1px 5px rgb(32, 198, 179); */
-  transition: .45s .45s;
+  transition: 0.45s 0.45s;
+}
+.form-control1:hover {
+  border: 1.5px solid rgb(0, 255, 247);
+  padding-left: 10px;
 }
 .form-control1::placeholder {
   font-size: 18px;
   padding-left: 10px;
   opacity: 0.7;
- color: rgb(238, 7, 255);
-} 
+  color: aqua;
+}
 .input textarea {
   height: 100px;
-}
-.form-control1:hover {
-  background-color: rgb(82, 80, 80);
-}
-.forsend{
-/* width: fit-content; */
-  text-align: center;
+  padding-left: 10px;
 }
 
 .sendbtn {
   font-size: 20px;
-  border:  solid rgb(31, 222, 232);
-  padding: 3px 5px;
-  color:white;
-  border-radius: 5px;
-  background-color: #000000;
+  padding: 5px 35px;
+  color: white;
+  border-radius: 30px;
+  background-color: #009f97e3;
   transition: all 0.35s 0.34s;
+  display: flex;
+  border: solid rgb(255, 255, 255);
+  align-items: left;
 }
-.sendbtn:hover{
-  color: rgb(224, 60, 252);
+.sendbtn:hover {
+  border: solid rgba(8, 255, 214, 0.839);
+  color: rgb(0, 255, 238);
   /* color: rgb(1, 1, 2); */
 }
 
-
-.uparrow{
+.uparrow {
   padding-right: 0rem;
   margin-right: 0rem;
   background-color: #232222;
@@ -66,19 +80,32 @@
   right: 6px;
   text-align: center;
   border-radius: 50%;
- 
 }
 
-@media (max-width:565px) {
- #conhead{
-  margin-top: -2.8rem;
- }
+@media (max-width: 565px) {
+  #conhead {
+    margin-top: -2.8rem;
+  }
 
-  .form-control1{
+  .form-control1 {
     width: 18rem;
   }
-  .uparrow{
+  .uparrow {
     right: 0.8rem;
   }
-
+  .contact {
+    flex-direction: column-reverse;
+  }
+  .sendbtn {
+    align-items: center;
+  }
+  .contact > div {
+    text-align: center;
+    max-width: 100vw;
+    padding: 0px 10px;
+  }
+  .sendbutton{
+    display: flex;
+    justify-content: center;
+  }
 }

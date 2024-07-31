@@ -18,34 +18,103 @@ const Aboutme = () => {
         <div className="back" id="about">
             <div className="content" id="aboutid">
 
-                <div >
-                    <h3 className="backcontent">ABOUT ME</h3>
-                </div>
+
                 <div className="heading1">
-                    <h3>Know me more</h3>
+
+                    <h3>About me</h3>
                 </div>
                 <div className="description">
-                    <div  className="description_details">
+                    <div className="description_details">
                         <h3>I'm <span>Atanu Ghosh</span> , a CSE Student</h3>
-                        <p>Currently I'm persuring B tech degreee in computer science and engineering from B.P. Poddar institute of management and Technology,Kolkata. I have knowledge of C, python & Java.I also familer to web developement , can implement frontend and backend using React ,Nodejs and other frameworks.  </p>
+                        <p>
+
+                            I am a pre-final-year student at the B. P. Poddar Institute of Management and Technology, pursuing CSE. I am a tech enthusiast with knowledge of various programming languages and frameworks.</p>
                         <div className="personaldetails">
                             <div>
-                                <p>Email : </p>
-                                <a>atanu2004ghosh@gmail.com</a>
+
+                                <div>
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <h6 >atanu2004ghosh@gmail.com</h6>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <h6>+91 7439252297</h6>
+                                </div>
                             </div>
                             <div>
-                                <p>Mob no : </p>
-                                <a>XXXXXX2297</a>
+                                <div>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <h6>Born on 31 Mar,2004</h6>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-house"></i>
+                                    <h6>Naihati ,WB ,743166</h6>
+                                </div>
+                            </div>
+                            <div className="skill">
+                                <div>
+                                    <h4>Skill:</h4>
+                                    <div>
+
+                                    <img src={require('../images/java.png')} alt="java" />
+                                    <img src={require('../images/python.png')} alt="pyhton" />
+                                    <img src={require('../images/c.png')} alt="c" />
+                                    <img src={require('../images/html.png')} alt="HTML" />
+                                    <img src={require('../images/css.png')} alt="CSS" />
+                                    <img src={require('../images/js.png')} alt="JS" />
+                                    <img src={require('../images/react.png')} alt="Reactjs" />
+                                    <img src={require('../images/nodejs.png')} alt="Nodejs" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+
+                                    <a onClick={onButtonClick} target="_blank"><button class="button-30" role="button">
+                                        <i class="fa-regular fa-file"></i>Resume</button> </a>
+                                </div>
                             </div>
                         </div>
-                        <div><a onClick={onButtonClick} target="_blank"> <button> Download CV</button> </a></div>
+
+                        {/* <div><a onClick={onButtonClick} target="_blank"><button class="button-71" role="button">Download CV</button> </a></div> */}
                     </div>
-                    <div className="aboutimg">
-                        <img src={require("../images/myimg.jpg")}></img>
+                    <div className="education">
+                        <div className="educationheading">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Education</h3>
                         </div>
+                        <div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div>
+                                <h5>B. P. poddar Institute Of Management And Technology</h5>
+                                <p>Bachelor of Technology</p>
+                                <h6>2021 - 2025</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div>
+
+                                <h5>Naihati Mahendra High School</h5>
+                                <p>Higher Secondary</p>
+                                <h6>2019 - 2021</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div>
+
+                                <h5>Naihati Mahendra High School</h5>
+                                <p>Secondary</p>
+                                <h6>2019</h6>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
-            {/* <span><a className="uparrow" href='#welcome_home' ><i class="fa-solid fa-angle-up"></i></a></span> */}
+
 
         </div>
     )

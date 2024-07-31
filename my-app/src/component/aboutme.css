@@ -1,16 +1,10 @@
 
-.back {
-  position: relative;
-  font-size: 16px;
-  width: 100%;
-  background-color: rgb(17, 16, 16);
-  height: fit-content;
-}
+
 .content {
   position: relative;
   width: 100%;
   text-align: center;
-  padding-top: 1.25rem;
+  padding-top: 2.25rem;
 }
 
 .backcontent {
@@ -19,12 +13,13 @@
   font-weight: bold;
 }
 .heading1 h3 {
-  transform: translateY(-80px);
+  /* transform: translateY(-80px); */
   font-size: 2.5rem;
-  margin: 0px;
+  /* margin-top:30px; */
   text-align: center;
   color: aqua;
 }
+
 .description {
   padding: 1.25rem 1.75rem;
   display: flex;
@@ -49,40 +44,76 @@
   font-size: 18px;
 }
 
-.description button {
-  border: 2px solid aqua;
+ 
 
-  margin-top: 15px;
-  font-size: large;
-  border-radius: 2.2rem;
-  transition: all 0.35s 0.34s;
-  color: aliceblue;
-  background-color: rgb(0, 0, 0);
-}
-.description button:hover {
-color: rgb(249, 8, 249);
+
+.personaldetails {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .personaldetails div{
   display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
 }
-.personaldetails div a{
-  font-size: 18px;
-  padding: 1px 10px;
+
+.personaldetails div div i{
+  font-size: 22px;
+  padding-right: 10px;
+  color: aqua;
+}
+
+.skill div div{
+  flex-wrap: wrap;
+}
+.skill h4{
+  margin-right: 5px;
+  padding-top: 7px;
+}
+.skill img{
+  border-radius: 22px;
+  transition: transform 0.2s;
+  width: 33px;
+  height: 33px;
+  margin-left: 8px;
+  /* margin-bottom: 5px; */
+}
+.skill img:hover{
+  transform: scale(1.2);
+}
+
+
+
+
+.education >div {
+display: flex;
+padding: 10px 0px;
+}
+.education i{
+  padding:0px 20px 0px 10px;
+}
+.educationheading i {
+  /* padding:0px 20px 0px 10px; */
+  font-size: 35px;
   
-  
 }
-.aboutimg img{
-width: 250px;
-}
+  .education div div{
+    display: flex;
+    padding-left: 29px;
+   flex-direction: column;
+   max-width: 40vw;
+    }
+
 @media (max-width: 690px) {
   .backcontent {
     font-size: 4rem;
   }
   .heading1 h3 {
-      transform: translateY(-83px);
+      /* transform: translateY(-83px); */
     }
   .description {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .description * {
     text-align: left;
@@ -91,12 +122,83 @@ width: 250px;
     width: 98%;
     padding-right: 0rem;
   }
-  .heading1 h3 {
+  .heading1 {
     font-size: 2rem;
     padding-top: 15px;
   }
-  .aboutimg img{
-    width: 85vw;
-    margin-bottom: 20px;
+  
+    .personaldetails >div{
+      flex-direction: column;
+      justify-content: left;
     }
+    .personaldetails >div div{
+      /* flex-direction: column; */
+      justify-content: left;
+    }
+    .skill div div{
+      flex-wrap: wrap;
+    }
+    .skill img{
+     margin-bottom: 8px;
+    }
+   .education{
+    margin-top: 20px;
+   }
+   .education div div{
+    max-width: 80vw;
+   }
+}
+
+
+
+
+
+
+
+
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #3b3b3bf4;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(0, 152, 160, 0.4) 0 10px 10px, rgba(0, 193, 180, 0.3) 0 2px 5px 1px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #07f7fb;
+  cursor: pointer;
+  display: inline-flex;
+  /* font-family: "JetBrains Mono",monospace; */
+  height: 44px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 10px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #545454 0 0 0 1.5px inset, rgba(175, 160, 205, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(0, 152, 160, 0.4) 0 10px 10px, rgba(0, 193, 180, 0.3) 0 3px 6px 3px, #D6D6E7 0 -3px 0 inset;
+  /* transform: translateY(-3px); */
+}
+
+.button-30:active {
+  box-shadow: #00e7f3 0 3px 7px inset;
+  /* transform: translateY(3px); */
 }

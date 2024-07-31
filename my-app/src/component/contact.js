@@ -21,14 +21,13 @@ const Contact = () => {
     };
     return (
         <div className="back" id="contacts" >
-            <hr></hr>
-            <div className="content">
-                <div >
-                    <h3 className="backcontent">CONTACTS</h3>
-                </div>
+            
+            <div className="content" id="newcontact">
+                
                 <div className="heading1">
                     <h3 >Get In Touch</h3>
                 </div>
+                <div className="contact">
 
                 <form className="forfrom" ref={form} onSubmit={sendEmail}>
                     <div className="input">
@@ -43,10 +42,27 @@ const Contact = () => {
                         <textarea required className="form-control1" placeholder="Leave a comment here" name="message" id="floatingTextarea2" ></textarea>
                     </div>
 
-                    <button type="email" className=" sendbtn" value="send" > send massage </button>
+                    <div className="sendbutton">
+                        
+                    <button type="email" className=" sendbtn" value="send" > Submit </button>
+                    </div>
 
                 </form>
-
+                <div>
+                    <div>
+                        <h5>Address</h5>
+                        <p>Ghoshpara, Rajendrapur , Naihati , North 24 PGS, 743166</p>
+                    </div>
+                    <div>
+                        <h5>Email</h5>
+                        <p>atanu2004ghosh@gmail.com</p>
+                    </div>
+                    <div>
+                        <h5>Phone</h5>
+                        <p>+91 7439252297</p>
+                    </div>
+                </div>
+                </div>
 
                 <div style={{ marginTop: "15px" }}>
                     @2023 All rights are reserved

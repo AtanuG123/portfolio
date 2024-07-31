@@ -6,21 +6,21 @@ import Myskills from "./myskills";
 import Contact from "./contact";
 import Myprojects from "./myproject";
 import Navber from "./navbar";
+import Newnav from "./newnav";
 
 
 export default function Home(){
-    
-    
     return (
         <div className="home">
             <div >
-                <Navside/>
-                <Navber/>
+                {/* <Navside/> */}
+                {/* <Navber/> */}
             </div>
             <div className="main" >
+                <Newnav/>
                 <Welcomehome/>
                 <Aboutme/>
-                <Myskills/>
+                {/* <Myskills/> */}
                 <Myprojects/>
                 <Contact/>
             </div>

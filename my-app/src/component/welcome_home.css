@@ -6,11 +6,12 @@
 }
 
 #welcontent{
-  margin-top: 30px;
+  margin-top: 80px;
+  
 }
 
 #welcontent > div h2 {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   font-size: 3rem;
   font-family: "Caveat", cursive;
 }
@@ -34,12 +35,12 @@
   background-color: rgb(19, 83, 69);
 }
 #welcontent h6 {
-  font-size: 20px;
-  padding: 15px 0px 5px 0px;
+  font-size: 25px;
+  padding: 15px 100px;
 }
 
 .movingcursor {
-  margin-top: 40px;
+  margin-top: 20px;
   height: 40px;
   cursor: pointer;
   /* margin: 3.75rem 27.1rem; */
@@ -66,7 +67,7 @@
 @media (max-width: 768px) {
   .back1 {
     padding-top: 6rem;
-    height: 48rem;
+    height: 105vh;
     width: 100%;
   }
   .movingcursor {
@@ -78,7 +79,79 @@
 #welcontent > div{
   margin-bottom: 2rem;
 }
+#welcontent h6 {
+  font-size: 25px;
+  padding: 15px 30px;
+}
   .typewri {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+}
+
+.logosidebar >img{
+  width: 100px;
+  height: 100px;
+  border: 2px solid grey;
+  border-radius: 100px;
+  
+  background-size:cover;
+}
+
+
+/* CSS */
+.button-71 {
+  background-color: #333333d9;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 12px 13px;
+  margin: 20px 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient( rgba(199, 199, 199, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+.button-71 i{
+  color: aqua;
+  padding-right: 5px;
+}
+@media (min-width: 768px) {
+  .button-71 {
+    font-size: 22px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .button-71 {
+    font-size: 25px;
+    /* padding: 16px 38px; */
   }
 }

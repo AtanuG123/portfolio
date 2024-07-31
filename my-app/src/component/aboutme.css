@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   text-align: center;
-  padding-top: 2.25rem;
+  padding-top: 4.5rem;
 }
 
 .backcontent {
@@ -109,9 +109,9 @@ padding: 10px 0px;
   .backcontent {
     font-size: 4rem;
   }
-  .heading1 h3 {
-      /* transform: translateY(-83px); */
-    }
+  .content{
+    padding-top: 110px;
+  }
   .description {
     flex-direction: column;
   }

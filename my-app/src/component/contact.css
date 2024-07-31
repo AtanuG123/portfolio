@@ -82,7 +82,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 565px) {
+@media (max-width: 770px) {
   #conhead {
     margin-top: -2.8rem;
   }

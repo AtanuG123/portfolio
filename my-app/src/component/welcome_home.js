@@ -1,8 +1,9 @@
 import React from "react";
 import "./welcome_home.css";
-// import Aboutme from "./aboutme";
+import { useNavigate } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 const Welcomehome = () => {
+    let navigate = useNavigate();
     const [text] = useTypewriter({
         words: ["  Atanu Ghosh.", ' a Programmer.', ' a Web developer.'],
         loop: 0,
@@ -36,17 +37,9 @@ const Welcomehome = () => {
                         delivering dynamic and engaging user experiences.</h6>
                 </div>
                 <div>
-
                     <div>
-
-
-                        <button class="button-71" role="button"><i class="fa-brands fa-github"></i>Github</button>
-
-
-
-
-
-                        <button class="button-71" role="button"><i class="fa-brands fa-linkedin"></i>Linkedin</button>
+                        <a href="https://github.com/AtanuG123"><button class="button-71"  role="button"><i class="fa-brands fa-github"></i>Github</button></a>
+                        <a href="https://www.linkedin.com/in/atanu-ghosh-528588232/"><button class="button-71" role="button"><i class="fa-brands fa-linkedin"></i>Linkedin</button></a>
                     </div>
                 </div>
                 <div className="movingcursor">

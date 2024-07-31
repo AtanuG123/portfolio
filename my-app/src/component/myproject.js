@@ -12,7 +12,7 @@ const Myprojects = () => {
 
                     <div className="project1" >
                         <div>
-                            <h4>Justshopy</h4>
+                            <h3>Justshopy</h3>
                             <div  className="skill">
                                 <h6>Made with : </h6>
                                 <img src={require('../images/html.png')} alt="HTML" />
@@ -22,12 +22,12 @@ const Myprojects = () => {
                                     <img src={require('../images/nodejs.png')} alt="Nodejs" />
                             </div>
                             <p>
-                                Reverse Job board for companies looking to hire developers in Australia. Filter by experience, location and keyboards. Companies can pay a monthly fee to be able to message developers on the site and view their information.
+                                Justshopy is a Ecommerce shopping website . In which user can create account , search product , add product to cart and many more . It's build using React as frontend , Nodejs as backend and MongoDB for database. 
                             </p>
                             <div>
 
                             <a href="https://justshopy.vercel.app/" className="readmore"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="https://justshopy.vercel.app/" className="readmore"><i className="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/AtanuG123/Justshopy" className="readmore"><i className="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                         <img src={require('../images/projectphoto1.png')} className="projectphoto" alt="..." />
@@ -36,7 +36,7 @@ const Myprojects = () => {
                     </div>
                     <div className="project1" >
                         <div>
-                            <h4>Calculator</h4>
+                            <h3>Calculator</h3>
                             <div  className="skill">
                                 <h6>Made with : </h6>
                                 <img src={require('../images/html.png')} alt="HTML" />
@@ -46,12 +46,12 @@ const Myprojects = () => {
                                     
                             </div>
                             <p>
-                                Reverse Job board for companies looking to hire developers in Australia. Filter by experience, location and keyboards. Companies can pay a monthly fee to be able to message developers on the site and view their information.
+                                Scientific calculator that can perform many scitific operation . It's totally created using HTML ,CSS and JavaScript.
                             </p>
                             <div>
 
-                            <a href="https://justshopy.vercel.app/" className="readmore"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="https://justshopy.vercel.app/" className="readmore"><i className="fa-brands fa-github"></i></a>
+                            <a href="https://atanug123.github.io/calculaterandtimer/" className="readmore"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/AtanuG123/calculaterandtimer" className="readmore"><i className="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                         <img src={require('../images/calculator.png')} className="projectphoto" alt="..." />

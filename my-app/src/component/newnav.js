@@ -24,70 +24,21 @@ const Newnav=()=> {
     })
 }
   return (
-    <div>
-     <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
-      <nav className="navbar" onClick={e => e.stopPropagation()}>
-        <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            AG
-            
-          </NavLink>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/about"
-                activeClassName="active"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                About me
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/blog"
-                activeClassName="active"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                Project
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/contact"
-                activeClassName="active"
-                className="nav-links"
-               onClick={click ? handleClick : null}
-              >
-                Contact
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              
-            {/* <a onClick={onButtonClick} target="_blank"><button class="button-71" role="button">Download CV</button> </a> */}
-            </li>
-          </ul>
-          <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
-          </div>
-        </div>
-      </nav>
-    </ div>
+    <header>
+    <h1 class="logo">AG</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+    <label for="nav-toggle" class="nav-hamburger">
+      <span></span>
+    </label>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#newcontact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   );
 }
 export default Newnav;

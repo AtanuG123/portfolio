@@ -71,14 +71,15 @@
   
 }
 
-@media (max-width: 565px) {
+@media (max-width: 650px) {
   .projects {
     margin: auto;
+    /* width: 90vw; */
     text-align: center;
     flex-direction: column;
   }
   .projects > div {
-    width: 300px;
+    width: 90vw;
     margin: auto;
     margin-bottom: 30px;
   }
@@ -95,4 +96,5 @@
   .projectphoto {
     width: 19rem;
   }
+  
 }

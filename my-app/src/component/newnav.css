@@ -1,153 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
-* {
-    margin: 0;
-    padding: 0;
-  }
- 
-  
-  /* .pages {
-    color: #316685;
-    text-align: center;
-    font-size: calc(1.5rem + 2vw);
-    margin-top: 10%;
-    
-   
-  } */
-  
-  .navbar {
-    background-color: #252b2bad;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 20;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    max-width: 1500px;
-  }
-  .nav-container a:hover{
-    color:#21f5e0 ;
-  }
-  .main-container{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color:rgba(0,0,0,0.3);
-  }
-  
-  .nav-logo {
-    color: #0df9fd;
-    align-items: center;
-    margin-left: 20px;
-    cursor: pointer;
-    padding-bottom: 15px;
-    text-decoration: none;
-    font-size: 2rem;
-    flex-grow: 1;
-  }
-  
-  .nav-menu {
-    display: flex;
-    list-style: none;
-    text-align: center;
-    margin-right: 2rem;
-  }
-  
-  .nav-links {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    height: 100%;
-    border-bottom: 3px solid transparent;
-  }
-  .fa-code {
-    margin-left: 1rem;
-  }
-  
-  .nav-item {
-    line-height: 40px;
-    margin-right: 1rem;
-  }
-  .nav-item a:hover{
-   color:white
-  }
-  
-  .nav-item:after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0;
-    background: transparent;
-    transition: width 0.7s ease, background-color 0.5s ease;
-  }
-  
-  .nav-item:hover:after {
-    width: 100%;
-    
-    background: #0df9fd;
-  }
-  
-  .nav-item.active {
-    color: #0ffdc1;
-    border: 1px solid #0df9fd;
-  }
-  
-  .nav-icon {
+:root {
+  --green: rgba(0, 152, 0, 0.85);
+  --grey: rgb(51, 51, 51);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+} */
+
+/*Nav Styles start here*/
+
+header {
+  background: rgba(0, 0, 0, 0.851);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.logo {
+  margin: .1em;
+  color: rgb(2, 255, 238);
+}
+
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-hamburger {
+  /* outline: 1px solid rgb(3, 3, 3); */
+  opacity: .8;
+}
+
+.nav-hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-hamburger span,
+.nav-hamburger span::before,
+.nav-hamburger span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 4px;
+  position: relative;
+}
+
+.nav-hamburger span::before,
+.nav-hamburger span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-hamburger span::before {
+  bottom: 7px;
+}
+
+.nav-hamburger span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: rgba(49, 49, 49, 0.865);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: aqua;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*Main body styles starts here*/
+
+/* .content {
+  height: 200vh;
+   background-image: url(//unsplash.it/1000/1000); 
+  background-color: #939393;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}  */
+
+/* Media Query for bigger screens*/
+@media screen and (min-width: 800px) {
+  .nav-hamburger {
     display: none;
   }
-  
-  @media screen and (max-width: 960px) {
-    
-    .nav-menu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      border-top: 1pxsolid #fff;
-      position: absolute;
-      top: 70px;
-      left: -110%;
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-  
-    .nav-menu.active {
-      background: #232727;
-      left: 0px;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-    }
-    .nav-item .active {
-      color: #1dfcd7;
-      border: none;
-    }
-    .nav-links {
-      padding: 1.5rem;
-      width: 100%;
-      display: table;
-    }
-  
-    .nav-icon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      /* padding-bottom: 15px; */
-      transform: translate(-100%, 60%);
-      font-size: 1.6rem;
-      cursor: pointer;
-      color: #09f7f7;
-    }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 4fr) 1fr;
   }
+  
+  .logo {
+    /* height: 150px; */
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-top: .5em;
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: aqua;
+    position: absolute;
+    top: -.25em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+    border-radius: 4px;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+  
+  
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 60px;
+    padding: 10px 0px;
+  }}

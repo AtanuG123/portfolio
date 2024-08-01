@@ -18,7 +18,7 @@
 .forfrom {
   text-align: center;
 }
-.forfrom div {
+.forfrom >div {
   color: #000000;
   padding-top: 5px;
   margin: 1.25rem 0rem;

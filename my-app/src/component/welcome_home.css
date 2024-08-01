@@ -6,7 +6,9 @@
 }
 
 
-
+#welcontent{
+  padding-top: 70px;
+}
 #welcontent > div h2 {
   /* padding-top: 20px; */
   font-size: 3rem;
@@ -66,8 +68,11 @@
 @media (max-width: 768px) {
   .back1 {
     /* padding-top: 6rem; */
-    height: 105vh;
+    height: 99vh;
     width: 100%;
+  }
+  #welcontent{
+    padding-top: 140px;
   }
   .movingcursor {
     margin: 3rem;

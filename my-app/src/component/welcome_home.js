@@ -44,8 +44,7 @@ const Welcomehome = () => {
                 <div className="movingcursor">
                     <a href="#about" ><i className="fa-solid fa-chevron-down"></i></a>
                 </div>
-                <div>
-                </div>
+                
             </div>
         </div>
     )

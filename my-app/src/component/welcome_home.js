@@ -42,7 +42,7 @@ const Welcomehome = () => {
                     </div>
                 </div>
                 <div className="movingcursor">
-                    <a href='#about' ><i className="fa-solid fa-chevron-down"></i></a>
+                    <a href="#about" ><i className="fa-solid fa-chevron-down"></i></a>
                 </div>
                 <div>
                 </div>

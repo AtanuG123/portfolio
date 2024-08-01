@@ -1,11 +1,11 @@
 import "./home.css";
-import Navside from "./navside";
+// import Navside from "./navside";
 import Welcomehome from "./welcome_home";
 import Aboutme from "./aboutme";
-import Myskills from "./myskills";
+// import Myskills from "./myskills";
 import Contact from "./contact";
 import Myprojects from "./myproject";
-import Navber from "./navbar";
+// import Navber from "./navbar";
 import Newnav from "./newnav";
 
 

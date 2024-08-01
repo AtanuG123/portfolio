@@ -2,34 +2,45 @@ import "./contact.css";
 // import Alert from alert
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Alert from "./alert";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import LoadingSpinner from "./Loader";
 const Contact = () => {
     const [isloading, setisloading] = useState(false);
-    const [txt,settxt] = useState("Name");
     const form = useRef();
-    const loader = () => {
-      
-        setisloading(true);
-        
+    const madesubmit = () => {
+        toast.success("message sent succesfully", {
+          autoClose: 1500,
+          theme: "colored",
+        });
     }
+    const notfound = () => {
+        toast.info("Error occurred", {
+          autoClose: 1500,
+          theme: "colored",
+          position:"top-right"
+        });
+      };
+
+  
     const sendEmail = (e) => {
+        setisloading(true);
         e.preventDefault();
         
         emailjs.sendForm('service_f0lo43n', 'template_685t76p', form.current, '58oZ9ibqxclPO-LFI')
         .then((result) => {
-            console.log(result.text);
+            
             
             setisloading(false);
             document.getElementById("floatingInput").value=null;
             document.getElementById("email").value=null;
             document.getElementById("floatingTextarea2").value=null;
-            settxt("");
+            madesubmit();
                 
             },
                 (error) => {
                     setisloading(false);
-                    console.log(error.text);
+                    notfound();
 
                 }
             );
@@ -62,7 +73,7 @@ const Contact = () => {
                             <div className="sendbutton">
                                 <div style={{display:"flex"}}>
 
-                                <button type="email" className=" sendbtn" value="send" onClick={loader} > Submit </button>
+                                <button type="email" className=" sendbtn" value="send"  > Submit </button>
                                 {isloading ? <LoadingSpinner /> : null}
                                 {/* <LoadingSpinner/> */}
                                 </div>
@@ -92,6 +103,7 @@ const Contact = () => {
 
                 </div>
             </div>
+            <ToastContainer/>
         </>
     )
 }

@@ -33,7 +33,7 @@ const Newnav=()=> {
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Project</a></li>
         <li><a href="#newcontact">Contact</a></li>
       </ul>

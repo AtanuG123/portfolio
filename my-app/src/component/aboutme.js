@@ -2,14 +2,14 @@ import "./aboutme.css";
 const Aboutme = () => {
     const onButtonClick = () => {
         // using Java Script method to get PDF file
-        fetch('AtanuGhosh.pdf').then(response => {
+        fetch('AtanuGhoshResume.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'AtanuGhosh.pdf';
+                alink.download = 'AtanuGhoshResume.pdf';
                 alink.click();
             })
         })

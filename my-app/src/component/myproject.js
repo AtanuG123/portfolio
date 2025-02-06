@@ -30,7 +30,7 @@ const Myprojects = () => {
                             <a href="https://github.com/AtanuG123/Justshopy" className="readmore"><i className="fa-brands fa-github"></i></a>
                             </div>
                         </div>
-                        <img src={require('../images/projectphoto1.png')} className="projectphoto" alt="..." />
+                        <img src={require('../images/projectphoto11.jpg')} className="projectphoto" alt="..." />
 
 
                     </div>

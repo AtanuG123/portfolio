@@ -139,6 +139,8 @@ padding: 10px 0px;
       flex-wrap: wrap;
     }
     .skill img{
+      width: 25px;
+     height: 25px;
      margin-bottom: 8px;
     }
    .education{
@@ -154,51 +156,61 @@ padding: 10px 0px;
 
 
 
-
-
-
-.button-30 {
+.button-59 {
   align-items: center;
-  appearance: none;
-  background-color: #3b3b3bf4;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(0, 152, 160, 0.4) 0 10px 10px, rgba(0, 193, 180, 0.3) 0 2px 5px 1px, #D6D6E7 0 -3px 0 inset;
+  background-color: #fff;
+  border: 2px solid #000;
   box-sizing: border-box;
-  color: #07f7fb;
+  color: #000;
   cursor: pointer;
   display: inline-flex;
-  /* font-family: "JetBrains Mono",monospace; */
-  height: 44px;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
   justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 10px;
-  position: relative;
-  text-align: left;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: all .3s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
+}
+.button-59 >i{
+  color: #000 ;
+  padding-left: 5px;
+}
+.button-59:focus ,.button-59 i{
+  color: #171e29;
 }
 
-.button-30:focus {
-  box-shadow: #545454 0 0 0 1.5px inset, rgba(175, 160, 205, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+.button-59:hover,.button-59 i {
+  border-color: aqua;
+  color: rgb(0, 0, 0);
+  fill: #06f;
 }
 
-.button-30:hover {
-  box-shadow: rgba(0, 152, 160, 0.4) 0 10px 10px, rgba(0, 193, 180, 0.3) 0 3px 6px 3px, #D6D6E7 0 -3px 0 inset;
-  /* transform: translateY(-3px); */
+.button-59:active,.button-59 i {
+  border-color: aqua;
+  color: rgb(0, 0, 0);
+  fill: #06f;
 }
 
-.button-30:active {
-  box-shadow: #00e7f3 0 3px 7px inset;
-  /* transform: translateY(3px); */
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
 }
+@media (min-width: 500px) {
+  .button-59 {
+    min-width: 100px;
+    padding: 0px 10px;
+  }
+}
+

@@ -2,14 +2,14 @@ import "./aboutme.css";
 const Aboutme = () => {
     const onButtonClick = () => {
         // using Java Script method to get PDF file
-        fetch('AtanuGhoshResume.pdf').then(response => {
+        fetch('Atanu Ghosh Resume.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'AtanuGhoshResume.pdf';
+                alink.download = 'Atanu Ghosh Resume.pdf';
                 alink.click();
             })
         })
@@ -59,7 +59,7 @@ const Aboutme = () => {
 
                                     <img src={require('../images/java.png')} alt="java" />
                                     <img src={require('../images/python.png')} alt="pyhton" />
-                                    <img src={require('../images/c.png')} alt="c" />
+                                    {/* <img src={require('../images/c.png')} alt="c" /> */}
                                     <img src={require('../images/html.png')} alt="HTML" />
                                     <img src={require('../images/css.png')} alt="CSS" />
                                     <img src={require('../images/js.png')} alt="JS" />
@@ -71,8 +71,8 @@ const Aboutme = () => {
                             <div>
                                 <div>
 
-                                    <a onClick={onButtonClick} target="_blank"><button class="button-30" role="button">
-                                        <i class="fa-regular fa-file"></i>Resume</button> </a>
+                                    <a onClick={onButtonClick} target="_blank"><button class="button-59" role="button">
+                                        Resume<i class="fa-solid fa-download" ></i></button> </a>
                                 </div>
                             </div>
                         </div>

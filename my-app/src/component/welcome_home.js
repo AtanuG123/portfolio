@@ -33,12 +33,12 @@ const Welcomehome = () => {
                 </div>
                 <div>
 
-                    <p> I am Proactive and dedicated developer looking for opportunities to pursue technology milestones by collaborating with dynamic teams to build high-quality websites and identify opportunities to enhance the UX. </p>
+                    <p> I am a aspiring Computer Science and Engineering student seeking to leverage academic knowledge and technical skills in innovative projects, collaborate with cross-functional teams, and gain hands-on experience in the tech industry while continuing to develop expertise in cutting-edge technologies and best practices. </p>
                 </div>
                 <div>
                     <div>
                         <a href="https://github.com/AtanuG123"><button class="button-71"  role="button"><i class="fa-brands fa-github"></i>Github</button></a>
-                        <a href="https://www.linkedin.com/in/atanu-ghosh-528588232/"><button class="button-71" role="button"><i class="fa-brands fa-linkedin"></i>Linkedin</button></a>
+                        <a href="https://www.linkedin.com/in/atanug123/"><button class="button-71" role="button"><i class="fa-brands fa-linkedin"></i>Linkedin</button></a>
                     </div>
                 </div>
                 <div className="movingcursor">

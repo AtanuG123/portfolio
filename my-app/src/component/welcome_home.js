@@ -33,7 +33,7 @@ const Welcomehome = () => {
                 </div>
                 <div>
 
-                    <p> I am a aspiring Computer Science and Engineering student seeking to leverage academic knowledge and technical skills in innovative projects, collaborate with cross-functional teams, and gain hands-on experience in the tech industry while continuing to develop expertise in cutting-edge technologies and best practices. </p>
+                    <p> I am a aspiring final year Computer Science and Engineering student seeking to leverage academic knowledge and technical skills in innovative projects, and gain hands-on experience in the tech industry. </p>
                 </div>
                 <div>
                     <div>
